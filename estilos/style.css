@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+/*
+@font-face {
+	font-family: 'segoeui';
+	src: url('../fontes/Segoe\ UI.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'segoeui-bold';
+	src: url('../fontes/Segoe\ UI\ Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+*/
+
+/*
+	Paleta de Cores
+	Verde:  #49a09d
+	Lilás:  #5f2c82
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body {
+	background-color: #5f2c82;
+}
+
+main {
+	height: 100vh;
+	position: relative;
+}
+
+main section {
+	width: 250px;
+	height: 515px;
+	margin: auto;
+	border-radius: 20px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div#imagem {
+	width: 100%;
+	height: 40%;
+	background: url("../imagens/abstrata.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+	border-radius: 20px 20px 0px 0px;
+}
+
+div#formulario {
+	width: 100%;
+	height: 60%;
+	background-color: white;
+	border-radius: 0px 0px 20px 20px;
+}
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+div#formulario > p {
+	display: block;
+	width: 90%;
+	margin: auto;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 16px;
+	padding-bottom: 5px;
+}
+
+div#user {
+	background-color: #5f2c82;
+	width: 90%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 5px;
+	border-radius: 7px;
+}
+
+div#chave {
+	background-color: #5f2c82;
+	width: 90%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 5px;
+	border-radius: 7px;
+}
+
+input#iemail {
+	float: right;
+	width: 80%;
+	height: 35px;
+	margin-top: 2px;
+	margin-right: 2px;
+	border: 0px;
+	border-radius: 7px;
+	padding-left: 5px;
+	background-color: #90dad7;
+
+}	
+
+input#isenha {
+	float: right;
+	width: 80%;
+	height: 35px;
+	margin-top: 2px;
+	margin-right: 2px;	
+	border: 0px;
+	border-radius: 7px;
+	padding-left: 5px;
+	background-color: #90dad7;
+}
+
+.material-symbols-outlined {
+  	font-variation-settings:
+  		'FILL' 1,
+  		'wght' 700,
+  		'GRAD' 200,
+  		'opsz' 48;
+  	color: white;
+	margin-top: 8px; 
+	margin-left: 10px; 
+}
+
+input#entrada {
+	display: block;
+	background-color: #49a09d;
+	width: 90%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 5px;
+	border: 0px;
+	border-radius: 7px;
+	color: white;
+	cursor: pointer;
+}
+
+input#esqueci {
+	display: block;
+	width: 90%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 5px;
+	border: 1.5px solid #49a09d;
+	border-radius: 7px;
+	color: #49a09d;
+	cursor: pointer;
+}
+
+#entrada:hover {
+	background-color: #246e6d;
+}
+
+#esqueci:hover {
+	background-color:#90dad7;
+}
