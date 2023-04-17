@@ -42,7 +42,7 @@ section#login {
 	overflow: hidden;
 
 	background-color: white;
-	height: 500px;
+	height: 515px;
 	width: 250px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
@@ -129,6 +129,19 @@ div#formulario > p {
 }
 */
 
+form > div.campo {
+	display: block;
+	background-color: #5f2c82;
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	margin: 5px 0px;
+}
+
+div.campo > label {
+	display: none;
+}
+
 /*
 div#user {
 	background-color: #5f2c82;
@@ -183,7 +196,21 @@ input#isenha {
 	margin-top: 8px; 
 	margin-left: 10px; 
 }
+*/
 
+form > input[type=submit] {
+	display: block;
+	font-size: 1em;
+	width: 100%;
+	height: 40px;
+	background-color: #49a09d;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*
 input#entrada {
 	display: block;
 	background-color: #49a09d;
@@ -196,7 +223,24 @@ input#entrada {
 	color: white;
 	cursor: pointer;
 }
+*/
 
+form > a.botao {
+	display: block;
+	text-align: center;
+	font-size: 1em;
+	width: 100%;
+	height: 40px;
+	padding-top: 5px;
+	margin-top: 7px;
+	background-color: white;
+	color: #49a09d;
+	border: 1px solid #49a09d;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+/*
 input#esqueci {
 	display: block;
 	width: 90%;
@@ -208,12 +252,27 @@ input#esqueci {
 	color: #49a09d;
 	cursor: pointer;
 }
+*/
 
+form > input[type=submit]:hover {
+	background-color: #2b6361;
+}
+
+/*
 #entrada:hover {
 	background-color: #246e6d;
 }
+*/
+form > a.botao:hover {
+	background-color: #66e0dc;
+}
 
+/*
 #esqueci:hover {
 	background-color:#90dad7;
 }
 */
+
+form > a.botao > span {
+	font-size: 1em;
+}
