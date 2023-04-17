@@ -1,34 +1,28 @@
 @charset "UTF-8";
 
 /*
-@font-face {
-	font-family: 'segoeui';
-	src: url('../fontes/Segoe\ UI.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'segoeui-bold';
-	src: url('../fontes/Segoe\ UI\ Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-*/
-
-/*
 	Paleta de Cores
 	Verde:  #49a09d
 	Lilás:  #5f2c82
 */
 
 * {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
-html, body {
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+body, html {
+	background-color: #5f2c82;
+	height: 100vh;
+	width: 100vw;
+}
+
+main {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
 }
 
 body {
@@ -40,6 +34,21 @@ main {
 	position: relative;
 }
 
+section#login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
+	background-color: white;
+	height: 500px;
+	width: 250px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+}
+
+/* (Meu código)
 main section {
 	width: 250px;
 	height: 515px;
@@ -51,7 +60,17 @@ main section {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+*/
 
+section#login > div#imagem {
+	display: block;
+	background: #5f2c82 url(../imagens/abstrata.jpg);
+	background-size: cover;
+	background-position: left center;
+	height: 200px;
+}
+
+/* (Meu código)
 div#imagem {
 	width: 100%;
 	height: 40%;
@@ -61,7 +80,14 @@ div#imagem {
 	background-position: left center;
 	border-radius: 20px 20px 0px 0px;
 }
+*/
 
+section#login > div#formulario {
+	display: block;
+	padding: 10px;
+}
+
+/*
 div#formulario {
 	width: 100%;
 	height: 60%;
@@ -172,3 +198,4 @@ input#esqueci {
 #esqueci:hover {
 	background-color:#90dad7;
 }
+*/
