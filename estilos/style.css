@@ -97,14 +97,27 @@ div#formulario {
 	background-color: white;
 	border-radius: 0px 0px 20px 20px;
 }
+*/
 
+div#formulario > h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*
 h1 {
 	font-size: 24px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 15px;
 }
+*/
 
+div#formulario > p {
+	font-size: 0.8em;
+}
+
+/*
 div#formulario > p {
 	display: block;
 	width: 90%;
@@ -114,7 +127,9 @@ div#formulario > p {
 	line-height: 16px;
 	padding-bottom: 5px;
 }
+*/
 
+/*
 div#user {
 	background-color: #5f2c82;
 	width: 90%;

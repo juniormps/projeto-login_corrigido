@@ -22,27 +22,31 @@
 				</p>
 				<form action="login.php" method="post" autocomplete="on">
 
-					<div id="user" class="dados">
-						<label for="iemail"><span class="material-symbols-outlined">
+					<div class="campo">
+						<span class="material-symbols-outlined">
 							person
-							</span></label>
-						<input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="username" required>
+						</span>
+						<input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" mmaxlength="30" required>
+						<label for="ilogin">login</label>
 					</div>
 
-					<div id="chave" class="dados">
-						<label for="isenha"><span class="material-symbols-outlined">
+					<div class="campo">
+						<span class="material-symbols-outlined">
 							vpn_key
-							</span></label>
-						<input type="password" name="senha" id="isenha" placeholder="sua senha" required>
+						</span>
+						<input type="password" name="senha" id="isenha" placeholder="sua senha"  autocomplete="current-password" minlength="8" maxlength="20" required>
+						<label for="isenha">senha</label>
 					</div>
 
-					<div>
-						<input id="entrada" type="submit" value="Entrar">
-					</div>
-
-					<div>
-						<input id="esqueci" type="submit" value="Esqueci a senha">
-					</div>
+					<input type="submit" value="Entrar">
+					
+					<a href="esqueci.html">Esqueci a senha <span class="material-symbols-outlined">
+						mail
+					</span>
+					</a>
+					<!-- Caso já soubesse JavaScript, o botão "Esqueci a senha" seria de outra maneira, como por exemplo:
+					<button>Esqueci a senha</button> -->
+					
 				</form>
 			</div>
 		</section>
