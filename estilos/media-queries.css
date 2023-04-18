@@ -135,7 +135,7 @@
 	*/
 
 	section#login > div#formulario {
-		float: left
+		float: left;
 		width: 50%;
 		height: 100%;
 	}
